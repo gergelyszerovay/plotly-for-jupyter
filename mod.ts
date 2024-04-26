@@ -35,7 +35,7 @@ Plotly.newPlot(${newPlotArgs});
  * Displays a Plotly plot below the code cell.
  *
  * @param data - Array of data traces to plot
- * @param layout - Optional. Partial layout configuration object which may contain settings like
+ * @param layout - Optional. Partial Layout object which may contain settings like
  * title, axes, annotations, etc., that modify the appearance and behavior of the plot.
  * @param config - Optional. Partial Configuration object for global Plotly settings such as
  * interactivity, responsive behavior, and display modes.

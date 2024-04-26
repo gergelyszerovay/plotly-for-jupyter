@@ -9,6 +9,18 @@ It contains:
 
 ### `displayPlotlyPlot()`
 
+**Function Signature:**
+
+```typescript
+export async function displayPlotlyPlot(
+  data: Plotly.Data[],
+  layout?: Partial<Plotly.Layout>,
+  config?: Partial<Plotly.Config>,
+  id?: string,
+  version?: string
+): Promise<void>;
+```
+
 **Parameters:**
 
 - **`data`**: Array of data traces to plot.
@@ -25,7 +37,7 @@ A promise that resolves when the plot has been successfully rendered or updated.
 
 ```ts
 import {
-  plotly_for_jupyter,
+  displayPlotlyPlot,
   Plotly,
 } from "https://deno.land/x/plotly_for_jupyter/mod.ts";
 
