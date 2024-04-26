@@ -65,3 +65,5 @@ const config: Partial<Plotly.Config> = { scrollZoom: true };
 // it renders the plot below the code cell as an HTML output
 await displayPlotlyPlot(data, layout, config);
 ```
+
+![screenshot](https://github.com/gergelyszerovay/plotly_for_jupyter/blob/main/docs/screenshot.png)
