@@ -1,11 +1,11 @@
-# plotly-for-jupyter
+# plotly_for_jupyter
 
 Deno module for displaying Plotly.js plots in Jupyter notebooks
 
 # Usage
 
 ```
-import { plotly-for-jupyter } from "https://deno.land/x/plotly-for-jupyter/mod.ts";
+import { plotly_for_jupyter } from "https://deno.land/x/plotly_for_jupyter/mod.ts";
 
 const trace1: Plotly.Data = {
   x: ["giraffes", "orangutans", "monkeys"],
@@ -28,5 +28,6 @@ const layout: Partial<Plotly.Layout> = { barmode: "group" };
 const config: Partial<Plotly.Config> = { scrollZoom: true };
 
 // this should be the last statement in the cell
+// it renders the plot below the code cell as a HTML output
 displayPlotlyPlot(data, layout, config);
 ```
