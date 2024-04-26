@@ -66,4 +66,4 @@ const config: Partial<Plotly.Config> = { scrollZoom: true };
 await displayPlotlyPlot(data, layout, config);
 ```
 
-![screenshot](https://github.com/gergelyszerovay/plotly_for_jupyter/blob/main/docs/screenshot.png)
+![screenshot](https://github.com/gergelyszerovay/plotly_for_jupyter/blob/main/docs/screenshot.png?raw=true)
