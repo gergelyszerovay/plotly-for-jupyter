@@ -31,6 +31,18 @@ Plotly.newPlot(${newPlotArgs});
 </script>`;
 }
 
+/**
+ * Displays a Plotly plot below the code cell.
+ *
+ * @param data - Array of data traces to plot
+ * @param layout - Optional. Partial layout configuration object which may contain settings like
+ * title, axes, annotations, etc., that modify the appearance and behavior of the plot.
+ * @param config - Optional. Partial Configuration object for global Plotly settings such as
+ * interactivity, responsive behavior, and display modes.
+ * @param id - Optional. The ID of the HTML element in which the plot will be rendered.
+ * @param version - Optional. Specifies which version of Plotly to use.
+ * @returns A promise that resolves when the plot has been successfully rendered or updated.
+ */
 export async function displayPlotlyPlot(
   data: Plotly.Data[],
   layout?: Partial<Plotly.Layout>,

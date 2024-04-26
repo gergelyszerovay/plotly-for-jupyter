@@ -1,11 +1,29 @@
 # plotly_for_jupyter
 
-Deno module for displaying Plotly.js plots in Jupyter notebooks
+Deno module for displaying Plotly.js plots in Jupyter notebooks.
 
-# Usage
+It contains:
+
+- The `displayPlotlyPlot` function
+- And the Plotly types from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/plotly.js
+
+## `displayPlotlyPlot(data, layout, config, id, version) function: Displays a Plotly plot below the code cell.`
+
+**Parameters:**
+
+- **`data`**: Array of data traces to plot.
+- **`layout`** (Optional): Partial layout configuration object which may contain settings like title, axes, annotations, etc., that modify the appearance and behavior of the plot.
+- **`config`** (Optional): Partial Configuration object for global Plotly settings such as interactivity, responsive behavior, and display modes.
+- **`id`** (Optional): The ID of the HTML element in which the plot will be rendered.
+- **`version`** (Optional): Specifies which version of Plotly to use.
+
+**Returns:**  
+A promise that resolves when the plot has been successfully rendered or updated.
+
+**Example**:
 
 ```
-import { plotly_for_jupyter } from "https://deno.land/x/plotly_for_jupyter/mod.ts";
+import { plotly_for_jupyter, Plotly } from "https://deno.land/x/plotly_for_jupyter/mod.ts";
 
 const trace1: Plotly.Data = {
   x: ["giraffes", "orangutans", "monkeys"],
@@ -29,5 +47,5 @@ const config: Partial<Plotly.Config> = { scrollZoom: true };
 
 // this should be the last statement in the cell
 // it renders the plot below the code cell as a HTML output
-displayPlotlyPlot(data, layout, config);
+await displayPlotlyPlot(data, layout, config);
 ```
