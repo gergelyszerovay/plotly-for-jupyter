@@ -24,7 +24,7 @@ export async function displayPlotlyPlot(
 **Parameters:**
 
 - **`data`**: Array of data traces to plot.
-- **`layout`** (Optional): Partial layout configuration object which may contain settings like title, axes, annotations, etc., that modify the appearance and behavior of the plot.
+- **`layout`** (Optional): Partial Layout object which may contain settings like title, axes, annotations, etc., that modify the appearance and behavior of the plot.
 - **`config`** (Optional): Partial Configuration object for global Plotly settings such as interactivity, responsive behavior, and display modes.
 - **`id`** (Optional): The ID of the HTML element in which the plot will be rendered.
 - **`version`** (Optional): Specifies which version of Plotly to use.
